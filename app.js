@@ -3,7 +3,6 @@ var express = require('express');
 var app = express();
 var http = require('http');
 
-var Facebook = require('facebook-node-sdk');
 
 var config = {
     amazon:{
@@ -16,19 +15,49 @@ var config = {
         secret: '40d3849f6a9eedb6ef7edc2571993d60'
     }
 }
+var partials = {
+
+    header_nav:'partials/header_nav',
+    footer_nav:'partials/footer_nav'
+
+}
+
+var aws = require("aws-lib");
+
+prodAdv = aws.createProdAdvClient(
+    config.amazon.access_key_id,
+    config.amazon.secret_access_key,
+    config.amazon.assoc_tag
+);
+
+var Facebook = require('facebook-node-sdk');
+
+
+
+
 
 app.configure(function () {
     app.set('port', 3000);
+    app.set('views', __dirname + '/views');
+    app.set('view engine', 'hjs');
     app.use(express.bodyParser());
     app.use(express.cookieParser());
     app.use(express.session({ secret: 'foo bar' }));
-
 
     app.use(Facebook.middleware(config.facebook));
     app.use(express.static(path.join(__dirname, 'public')));
     app.use(express.errorHandler());
 });
 
+app.get('/', function(req, res){
+    partials.main = 'partials/product_board';
+    return res.render(
+        'index',
+        {
+            partials: partials
+        }
+    );
+});
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     req.facebook.api('/me/friends', function(err, data) {
         res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -49,21 +78,26 @@ app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_intere
 });
 
 
-app.get('/amazon', function(req, res){
-    var aws = require("aws-lib");
+app.get('/search', function(req, res){
 
-    prodAdv = aws.createProdAdvClient(
-        config.amazon.access_key_id,
-        config.amazon.secret_access_key,
-        config.amazon.assoc_tag
-    );
 
-    prodAdv.call("ItemSearch", {SearchIndex: "Books", Keywords: "Javascript"}, function(err, result) {
+    if(!(req.query.search && req.query.cat)){
+        res.end(JSON.stringify({
+            'error':'invalid search parameters'
+        }));
+
+    }
+    var objSearch = {
+        SearchIndex: req.query.cat,//"Books",
+        Keywords: req.query.search//"Javascript"
+    }
+
+    prodAdv.call("ItemSearch", objSearch, function(err, result) {
         if(err){
-            console.log(err);
+            //console.log(err);
             res.end(JSON.stringify(err));
         }else{
-            console.log(result);
+            //console.log(result);
             res.end(JSON.stringify(result));
         }
     })

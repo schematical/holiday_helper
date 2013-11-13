@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Shopfrog - Modern Ecommerce</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/shopfrog.css" rel="stylesheet" media="screen">
+
+    <link href="css/shopfrog-grey.css" rel="stylesheet" media="screen">
+    <!--<link href="css/shopfrog-pink.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-blue.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-brown.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-green.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-orange.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-grey.css" rel="stylesheet" media="screen">
+    <link href="css/shopfrog-bw.css" rel="stylesheet" media="screen">-->
+
+    <link href="css/rateit.css" rel="stylesheet" media="screen">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/jquery.rateit.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/shopfrog.js"></script>
+    <!--- HH SCRIPTS --->
+    <script src="js/mustache.js"></script>
+    <script src="lib/mustache/jquery.mustache.js"></script>
+    <script src="js/HH.js"></script>
+    <script src="js/control/HHControlBase.js"></script>
+    <script src="js/control/search-box.js"></script>
+    <script src="js/shopfrog.js"></script>
+
+</head>
+<body class="product-board">
+
+{{>header_nav }}
+
+{{>main}}
+
+{{>footer_nav}}
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-25112886-12', 'holidayhelper.co');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>
+
+
