@@ -1,0 +1,30 @@
+<!--<script id="search-box" type="text/html">-->
+<div class="product {{size}}">
+    <div class="media">
+        <a href="{{product.DetailPageURL}}" title="product title" target='_blank'>
+            <img src="{{product.LargeImage.URL}}" alt="product title" data-img="product-2" class="img-responsive">
+        </a>
+    </div>
+    <div class="details">
+        <p class="name" style='overflow:hidden; width:inherit;'>
+            <a href="{{product.DetailPageURL}}" target='_blank'>{{product_short_title}}</a>
+        </p>
+        <p class="price"><span class="cur">$</span><span class="total">{{product.ItemAttributes.ListPrice.Amount}}</span></p>
+       <!-- <a href="" class="details-expand" data-target="details-{{product.ASIN}}">+</a>-->
+    </div>
+   <!-- <div class="details-extra" id="details-{{product.ASIN}}">
+
+        <div style='padding:20Px;'>
+            <p>{{product.ItemAttributes.Title}}</p>
+            {{#product.ItemLinks.ItemLink}}
+                <a class='btn tn-atc qadd' href='URL'>{{Description}}</a>
+            <br> <br>
+            {{/product.ItemLinks.ItemLink}}
+        </div>
+<br/>
+        <a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>
+    </div>-->
+    <a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>
+</div>
+
+<!--</script>-->

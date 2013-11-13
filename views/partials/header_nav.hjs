@@ -1,8 +1,8 @@
 <header class="navbar navbar-fixed-top clearfix">
 
-<a class="current brand" href="index.html">Shopfrog</a>
+<a class="current brand" href="index.html">Holiday Helper</a>
 
-<div id="nav-basket" class="basket">
+<!--<div id="nav-basket" class="basket">
     <a href="shopping-cart.html" class="basket-link">
         <div class="basket-count">3</div>
     </a>
@@ -37,7 +37,7 @@
             </li>
         </ul>
     </div>
-</div>
+</div>-->
 
 <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     <span class="icon-bar"></span>
@@ -50,7 +50,7 @@
         <li class="current active">
             <a href="index.html" class="current top-level flat">Home</a>
         </li>
-        <li>
+        <!--<li>
             <a href="collection.html" class="top-level">Swimwear</a>
             <div class="submenu-container">
                 <ul class="submenu">
@@ -172,75 +172,9 @@
                     </li>
                 </ul>
             </div>
-        </li>
-        <li>
-            <a href="collection.html" class="top-level">Lingerie</a>
-            <div class="submenu-container">
-                <ul class="submenu">
-                    <li class="active">
-                        <a href="collection.html" class="sml">Bras</a>
-                        <ul class="submenu-preview">
-                            <li class="drop-link-li">
-                                <a href="collection.html" class="drop-link">View all<br> bras</a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-2-small.jpg" alt="" />
-                                    <p>Bra name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-1-small.jpg" alt="" />
-                                    <p>Bra name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-2-small.jpg" alt="" />
-                                    <p>Bra name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="collection.html" class="sml">Briefs</a>
-                        <ul class="submenu-preview">
-                            <li class="drop-link-li">
-                                <a href="collection.html" class="drop-link">View all<br> briefs</a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-1-small.jpg" alt="" />
-                                    <p>Brief name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-2-small.jpg" alt="" />
-                                    <p>Brief name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="product.html">
-                                    <img src="img/product-1-small.jpg" alt="" />
-                                    <p>Brief name</p>
-                                    <p class="price">$20.00</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="collection.html" class="sml">Thongs</a></li>
-                    <li><a href="collection.html" class="sml">G-strings</a></li>
-                </ul>
-            </div>
-        </li>
-        <li><a href="collection.html" class="top-level flat">Accessories</a></li>
+        </li>-->
+
+        <li><a href="about.html" class="top-level flat">About</a></li>
     </ul>
 </nav><!--/.nav-collapse -->
 

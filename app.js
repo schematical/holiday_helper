@@ -88,6 +88,7 @@ app.get('/search', function(req, res){
 
     }
     var objSearch = {
+        ResponseGroup:'Images,ItemAttributes',
         SearchIndex: req.query.cat,//"Books",
         Keywords: req.query.search//"Javascript"
     }

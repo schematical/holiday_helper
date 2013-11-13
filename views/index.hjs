@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Shopfrog - Modern Ecommerce</title>
+    <title>HolidayHelper.co - Holiday Gift Suggestions for Loved Ones</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -39,7 +39,8 @@
     <script src="js/HH.js"></script>
     <script src="js/control/HHControlBase.js"></script>
     <script src="js/control/search-box.js"></script>
-    <script src="js/shopfrog.js"></script>
+    <script src="js/control/product.js"></script>
+    <script src="js/control/hello.js"></script>
 
 </head>
 <body class="product-board">
