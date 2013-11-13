@@ -1,5 +1,7 @@
+var path = require('path');
 var express = require('express');
 var app = express();
+var http = require('http');
 
 var Facebook = require('facebook-node-sdk');
 
@@ -7,30 +9,16 @@ var config = {
     amazon:{
         access_key_id:'AKIAIWAM5VQTMEM73MFA',
         secret_access_key:'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',
-        assoc_tag:''
+        assoc_tag:'holiday_helper-20'
     },
     facebook:{
         appId: '321092171365778',
         secret: '40d3849f6a9eedb6ef7edc2571993d60'
     }
 }
-//var facebook = new Facebook(fb_config);
-
-/*
-facebook.api('/amachang', function(err, data) {
-    console.log('hit');
-    if(err){
-        console.log(err);
-    }else{
-        console.log(data); // => { id: ... }
-    }
-});
-*/
-
-
-//var app = express.createServer();
 
 app.configure(function () {
+    app.set('port', 3000);
     app.use(express.bodyParser());
     app.use(express.cookieParser());
     app.use(express.session({ secret: 'foo bar' }));
@@ -38,6 +26,7 @@ app.configure(function () {
 
     app.use(Facebook.middleware(config.facebook));
     app.use(express.static(path.join(__dirname, 'public')));
+    app.use(express.errorHandler());
 });
 
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
@@ -61,7 +50,7 @@ app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_intere
 
 
 app.get('/amazon', function(req, res){
-    var aws = require("../lib/aws");
+    var aws = require("aws-lib");
 
     prodAdv = aws.createProdAdvClient(
         config.amazon.access_key_id,
@@ -70,7 +59,13 @@ app.get('/amazon', function(req, res){
     );
 
     prodAdv.call("ItemSearch", {SearchIndex: "Books", Keywords: "Javascript"}, function(err, result) {
-        console.log(JSON.stringify(result));
+        if(err){
+            console.log(err);
+            res.end(JSON.stringify(err));
+        }else{
+            console.log(result);
+            res.end(JSON.stringify(result));
+        }
     })
 });
 
