@@ -1,0 +1,25 @@
+{
+  "name": "holiday_helper",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.4.1",
+    "hjs": "*",
+    "less-middleware": "*",
+    "mongodb": "*",
+    "modella": "*",
+    "modella-validators": "*",
+    "modella-mongo": "*",
+    "modella-auth":"*",
+    "jquery":"*",
+    "jsdom":"*",
+     "facebook-node-sdk":"*"
+  },
+  "subdomain": "schematical",
+  "engines": {
+    "node": "21"
+  }
+}
