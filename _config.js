@@ -7,8 +7,8 @@ module.exports = function(){
                 appId: '599161553452323',
                 secret: '6ac87a0d0cc6756ba6c8358405ef9b98'
             };
-        default:
         case 'prod':
+        default:
             config.port = 80;
             config.facebook = {
                 appId: '321092171365778',
