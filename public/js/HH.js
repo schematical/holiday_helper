@@ -10,7 +10,8 @@
      */
     var _hh = {
         friend_data:[],
-        pageSize: 20
+        pageSize: 20,
+        product_data:[]
     }
     var api = function(strEndpoint,strMethod, objData){
         var objDefered = $.Deferred();
@@ -34,13 +35,12 @@
         return objDefered.promise();
     }
     _PopulateProducts  = function(data){
-        if(data.Items.Item){
-            for(var i in data.Items.Item){
-                var ctlProduct = new HH.Controls.product(
-                    data.Items.Item[i]
-                );
-                HH.AddControl(ctlProduct);
-            }
+        _hh.product_data = data;
+        for(var i = 0; i < _hh.pageSize; i++){
+            var ctlProduct = new HH.Controls.product(
+                _hh.pageSize[i]
+            );
+            HH.AddControl(ctlProduct);
         }
     }
     window.HH = HH = {

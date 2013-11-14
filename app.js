@@ -3,6 +3,28 @@ var express = require('express');
 var app = express();
 var http = require('http');
 
+//TODO: Move this
+function shuffle(array) {
+    var currentIndex = array.length
+        , temporaryValue
+        , randomIndex
+        ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
 
 var config = {
     amazon:{
@@ -79,11 +101,60 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
     if(!req.query.fbuid){
         res.end({ 'error':'missing query parameter of "' + req.query.fbuid + '"'});
     }
-    req.facebook.api('/' + req.query.fbuid + '/likes', function(err, _data){
-        if(err){
-            res.end(JSON.stringify(err));
-        }else{
-            res.end(JSON.stringify(_data));
+    req.facebook.api('/' + req.query.fbuid + '/likes', function(err, data){
+        var interests = shuffle(data.data);
+        var arrDeferred = [];
+        var results = [];
+        for(var i = 0; i < 10; i++){
+            if(interests[i]){
+                for(var ii in interests[i].category_list){
+                    var objSearch = {
+                        ResponseGroup:'Images,ItemAttributes',
+                        SearchIndex: "Blended",//"Books",
+                        Keywords:interests[i].category_list[ii].name
+                    }
+                    var objDeferred = {
+                        interest:interests[i],
+                         _done:function(data){
+                            results.push(data);
+                            arrDeferred.pop();
+                            if(arrDeferred.length == 0){
+                                var arrReturn = [];
+                                for(var i in results){
+
+                                    if(results[i].Items.Item){
+                                        for(var ii in results[i].Items.Item){
+                                            if(results[i].Items.Item[ii].ItemAttributes){
+                                                results[i].Items.Item[ii].interest = results[i].interest;
+                                                arrReturn.push(
+                                                    results[i].Items.Item[ii]
+                                                );
+                                            }
+                                        }
+                                    }
+                                }
+
+                                res.end(JSON.stringify(shuffle(arrReturn)));
+                            }
+                         },
+                        _error:function(err){
+                            arrDeferred.pop();
+                            if(arrDeferred.length == 0){
+                                res.end(JSON.stringify(results));
+                            }
+                        }
+                    };
+                    prodAdv.call("ItemSearch", objSearch, function(err, result) {
+                        if(err){
+                            objDeferred._error(err);
+                        }else{
+                            result.interest = objDeferred.interest;
+                            objDeferred. _done(result);
+                        }
+                    });
+                    arrDeferred.push(objDeferred);
+                }
+            }
         }
     });
 });

@@ -9,7 +9,13 @@
         <p class="name" style='overflow:hidden; width:inherit;'>
             <a href="{{product.DetailPageURL}}" target='_blank'>{{product_short_title}}</a>
         </p>
-        <p class="price"><span class="cur">$</span><span class="total">{{product.ItemAttributes.ListPrice.Amount}}</span></p>
+        <p class="price">
+            <span class="cur">$</span>
+            <span class="total">{{product.ItemAttributes.ListPrice.Amount}}</span>
+        </p>
+        <p class="price">
+            <span>Based in their interest in {{product.interest.name}}</span>
+        </p>
        <!-- <a href="" class="details-expand" data-target="details-{{product.ASIN}}">+</a>-->
     </div>
    <!-- <div class="details-extra" id="details-{{product.ASIN}}">
