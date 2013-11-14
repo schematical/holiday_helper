@@ -2,12 +2,14 @@ module.exports = function(){
     var config = {}
     switch(process.env.NODE_ENV){
         case 'dev':
+             config.port = 3000;
              config.facebook = {
-                appId: '321092171365778',
-                secret: '40d3849f6a9eedb6ef7edc2571993d60'
+                appId: '599161553452323',
+                secret: '6ac87a0d0cc6756ba6c8358405ef9b98'
             };
         default:
         case 'prod':
+            config.port = 80;
             config.facebook = {
                 appId: '321092171365778',
                 secret: '40d3849f6a9eedb6ef7edc2571993d60'

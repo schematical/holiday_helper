@@ -25,7 +25,7 @@ var Facebook = require('facebook-node-sdk');
 
 
 app.configure(function () {
-    app.set('port', 3000);
+    app.set('port', config.port);
     app.set('views', __dirname + '/views');
     app.set('view engine', 'hjs');
     app.use(express.bodyParser());

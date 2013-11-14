@@ -73,7 +73,7 @@
     <file path="/loading.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462255255" ignored="false" />
     <file path="/loading.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462344314" ignored="false" />
     <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384465471443" ignored="false" />
-    <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384467953192" ignored="false" />
+    <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384470139648" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,19 +93,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="HH.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HH.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/HH.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.8019802">
+            <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-9.72">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="9" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+            <state line="27" column="31" selection-start="461" selection-end="461" vertical-scroll-proportion="0.61904764">
               <folding />
             </state>
           </provider>
@@ -181,7 +181,7 @@
       <file leaf-file-name="_config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="4" selection-start="656" selection-end="663" vertical-scroll-proportion="0.0">
+            <state line="11" column="12" selection-start="335" selection-end="352" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -209,10 +209,10 @@
         <option value="$PROJECT_DIR$/views/partials/loading.hjs" />
         <option value="$PROJECT_DIR$/_aws.js" />
         <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
-        <option value="$PROJECT_DIR$/_config.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.hjs" />
         <option value="$PROJECT_DIR$/public/js/HH.js" />
+        <option value="$PROJECT_DIR$/_config.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -406,7 +406,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -559,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="4" selection-start="656" selection-end="663" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/facebook-node-sdk/test/facebook.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="48" selection-start="2791" selection-end="2791" vertical-scroll-proportion="2.984756">
@@ -594,16 +587,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="9" selection-start="1020" selection-end="1020" vertical-scroll-proportion="0.0">
+        <state line="11" column="12" selection-start="335" selection-end="352" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/HH.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="0.8019802">
+        <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-9.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="31" selection-start="461" selection-end="461" vertical-scroll-proportion="0.61904764">
           <folding />
         </state>
       </provider>
