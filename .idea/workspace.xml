@@ -102,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.71428573">
+            <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -178,10 +178,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_config.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="16" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+            <state line="11" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.5030488">
               <folding />
             </state>
           </provider>
@@ -211,8 +211,8 @@
         <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
         <option value="$PROJECT_DIR$/views/index.hjs" />
         <option value="$PROJECT_DIR$/public/js/HH.js" />
-        <option value="$PROJECT_DIR$/_config.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/_config.js" />
       </list>
     </option>
   </component>
@@ -594,16 +594,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.js">
+    <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="16" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
+        <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.71428573">
+        <state line="11" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.5030488">
           <folding />
         </state>
       </provider>

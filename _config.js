@@ -9,7 +9,7 @@ module.exports = function(){
             };
         case 'prod':
         default:
-            config.port = 80;
+            config.port = 3000;
             config.facebook = {
                 appId: '321092171365778',
                 secret: '40d3849f6a9eedb6ef7edc2571993d60'
