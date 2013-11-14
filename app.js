@@ -6,24 +6,9 @@ var http = require('http');
 var _aws = require('./_aws');
 
 
+var config = require('./_config')();
 
-var config = {
-    amazon:{
-        access_key_id:'AKIAIWAM5VQTMEM73MFA',
-        secret_access_key:'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',
-        assoc_tag:'holiday_helper-20'
-    },
-    facebook:{
-        appId: '321092171365778',
-        secret: '40d3849f6a9eedb6ef7edc2571993d60'
-    }
-}
-var partials = {
 
-    header_nav:'partials/header_nav',
-    footer_nav:'partials/footer_nav'
-
-}
 
 var aws = require("aws-lib");
 
@@ -53,23 +38,30 @@ app.configure(function () {
 });
 
 app.get('/', function(req, res){
-    partials.main = 'partials/product_board';
-    return res.render(
-        'index',
-        {
-            partials: partials
+    console.log("hti");
+    req.facebook.getUser(function(err, user) {
+        console.log(user);
+        if(user != 0){
+            res.redirect(302, '/start');
         }
-    );
+        config.partials.main = 'partials/product_board';
+        return res.render(
+            'index',
+            {
+                partials: config.partials
+            }
+        );
+    });
 });
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     req.facebook.api('/me/friends', function(err, data) {
-        partials.main = 'partials/product_board';
+        config.partials.main = 'partials/product_board';
         return res.render(
             'index',
             {
                 friends: data,
                 friends_json: JSON.stringify(data),
-                partials: partials
+                partials: config.partials
             }
         );
 
@@ -105,7 +97,7 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
             if(interests[i].category){
                 cats[interests[i].category] = {
                     'id':interests[i].category,
-                    'name':interests[i].category + ' ' + strAppend,
+                    'name':interests[i].category,// + ' ' + strAppend,
                     'count':0,
                     'parent':{
                         'name':interests[i].name,
@@ -120,7 +112,7 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
                     if(!cats[cat.id]){
                         cats[cat.id] = {
                             'id':cat.id,
-                            'name':cat.name + ' ' + strAppend,
+                            'name':cat.name,// + ' ' + strAppend,
                             'count':0,
                             'parent':{
                                 'name':interests[i].name ,
@@ -141,12 +133,12 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
             var b = b.count;
             return a>b?-1:a<b?1:0;
         });
-        console.log(cats_array);
 
 
-        for(var i in cats_array){
-
-            _aws.pop_interest_results(cats_array[i], options);
+        var search_cats = cats_array.slice(0, 20);
+        console.log(search_cats);
+        for(var i in search_cats){
+            _aws.pop_interest_results(search_cats[i], options);
 
         }
     });
@@ -172,8 +164,15 @@ app.get('/search', function(req, res){
             //console.log(err);
             res.end(JSON.stringify(err));
         }else{
-            //console.log(result);
-            res.end(JSON.stringify(result));
+            var arrReturn  =[];
+            if(result.Items.Item){
+                for(var i in result.Items.Item){
+                    if(result.Items.Item[i].ItemAttributes){
+                        arrReturn.push(result.Items.Item[i]);
+                    }
+                }
+            }
+            res.end(JSON.stringify(arrReturn));
         }
     })
 });

@@ -13,12 +13,28 @@
         friend_data:[],
         pageSize: 20,
         product_page:-1,
-        product_data:[]
+        product_data:[],
+        messages:{
+            product:
+                [
+                    'Elves working...',
+                    'Hand selecting the very best...',
+                    'Oh they stopped for hot chocolate',
+                    'Okay they are back on it!',
+                    'Almost there...'
+                ],
+            friends:[
+                ''
+            ]
+        }
     }
-    var api = function(strEndpoint,strMethod, objData){
+    var api = function(strEndpoint,strMethod, objData, messages){
         var objDefered = $.Deferred();
         if(typeof(objData) == 'undefined'){
             var objData = {};
+        }
+        if(messages){
+            HH.ShowLoader(messages);
         }
         $.ajax({
             'dataType':'json',
@@ -27,10 +43,16 @@
             'type':strMethod
         }).done(
             function(objResponse){
+                if(messages){
+                    HH.HideLoader();
+                }
                 objDefered.resolve(objResponse);
             }
         ).fail(
             function(objError){
+                if(messages){
+                    HH.HideLoader();
+                }
                 objDefered.reject(objError);
             }
         );
@@ -44,8 +66,21 @@
         Init:function(){
             /*var ctlSearch = new HH.Controls['search-box']();
             HH.AddControl(ctlSearch);*/
-            var ctlHello = new HH.Controls.hello();
-            HH.AddControl(ctlHello)
+            _hh.davis = Davis(function () {
+                this.get('/', function (req) {
+                    var ctlHello = new HH.Controls.hello();
+                    HH.AddControl(ctlHello)
+                })
+            });
+
+            _hh.davis.start();
+            if(document.location.pathname == '/'){
+                setTimeout(function(){
+                    document.location.href = '#';
+                }, 500);
+            }
+
+
 
         },
         AddControl:function(ctl){
@@ -64,8 +99,14 @@
                 {
                     search:strSearch,
                     cat:strCatigory
-                }
-            ).done(_PopulateProducts).fail(_error);
+                },
+                _hh.messages.product
+            ).done(function(data){
+                    HH.EmptyControls();
+                    _hh.product_page = -1;
+                    _hh.product_data = data;
+                    HH.PopulateProducts();
+            }).fail(_error);
         },
         SetFriendData:function(data){
 
@@ -109,12 +150,13 @@
                 'get',
                 {
                     'fbuid': objFriend.id
-                }
+                },
+                _hh.messages.product
             ).done(function(data){
                 HH.EmptyControls();
-                _hh.product_page = 0;
+                _hh.product_page = -1;
                 _hh.product_data = data;
-                HH.PopulateProducts(0);
+                HH.PopulateProducts();
 
             }).fail(_error);
         },
@@ -138,6 +180,31 @@
                 callback:HH.PopulateProducts
             });
             HH.AddControl(ctlFriend);
+        },
+        ShowLoader:function(messages){
+            $('#div-loading').modal('show');
+            $('#div-loading').find('.progress-bar').finish().css('width','0%').animate(
+                {width:'100%'},
+                10000,
+                function(){
+
+                }
+            );
+            var i_message = 0;
+            $('#div-loading').find('#myModalLabel').text(messages[i_message]);
+            _hh.modal_timeout = setTimeout(function() {
+                i_message = i_message + 1;
+                if(i_message > messages.length){
+                    i_message = 0;
+                }
+                $('#div-loading').find('#myModalLabel').text(messages[i_message]);
+
+            }, 3000);
+        },
+        HideLoader:function(){
+            $('#div-loading').find('.progress-bar').finish();
+            $('#div-loading').modal('hide');
+            clearTimeout(_hh.modal_timeout);
         }
     };
 

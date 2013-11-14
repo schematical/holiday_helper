@@ -19,7 +19,6 @@
                 <a href='https://www.facebook.com/{{product.interest.id}}' target='_blank'>{{product.interest.name}}</a> -
                 <a href='https://www.facebook.com/{{product.interest.parent.id}}' target='_blank'>{{product.interest.parent.name}}</a>
 
-
             </span>
         </p>
        <!-- <a href="" class="details-expand" data-target="details-{{product.ASIN}}">+</a>-->
@@ -36,7 +35,8 @@
 <br/>
         <a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>
     </div>-->
-    <a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>
+    <a class='btn-view-more-interest btn btn-bottom btn-atc qadd' data-interest-name='{{product.interest.name}}' data-interest-id='{{product.interest.id}}' href='#'>View More Like This</a>
+    <!--<a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>-->
 </div>
 
 <!--</script>-->

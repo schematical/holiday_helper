@@ -2,12 +2,20 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-3">
-                <p>&copy; 2013 Shopfrog</p>
-                <p><a href="">terms</a> / <a href="">privacy</a> / <a href="">returns</a> / <a href="">delivery</a></p>
+                <p>&copy; 2013 HolidayHelper.co</p>
+                <p>
+                    <a href="https://www.google.com/search?q=pictures+of+puppies&safe=off&tbm=isch" target='_blank'>Pictures of Puppies</a> /
+                    <a href="http://www.youtube.com/results?search_query=cats+playing+with+babies&sm=3">Cats Playing with Babies</a> <!--/ <a href="">returns</a> / <a href="">delivery</a>-->
+                </p>
             </div> <!-- //end span3 -->
             <div class="col-sm-6 col-md-3">
                 <p>Why us?</p>
-                <p><a href="about.html">about</a> / <a href="contact.html">contact</a> / <a href="">promotions</a> / <a href="">press</a></p>
+                <p>
+                    <a href="about.html">about</a> /
+                    <a href="contact.html">contact</a> /
+                    <a href="">promotions</a> /
+                    <a href="">press</a>
+                </p>
             </div> <!-- //end span3 -->
             <div class="col-sm-6 col-md-3">
                 <p>Social links</p>

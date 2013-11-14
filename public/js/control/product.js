@@ -10,13 +10,13 @@ HH.Controls.product = function(objProduct){
     var sizes = ['medium cat-3','large cat-4','large cat-1', 'medium cat-2'];
     _this.size = sizes[Math.floor(Math.random() * sizes.length)];
     _this.bindEvents = function(){
-       /* var _this = this;
-        this.jEle.find('.btn-search').click(function(){
+        var _this = this;
+        this.jEle.find('.btn-view-more-interest').click(function(){
             HH.Search(
-                _this.jEle.find('.txt-search').val(),
-                "Books"
+                $(this).attr('data-interest-name'),
+                "Blended"
             );
-        });*/
+        });
         $('#product-board').masonry();
     }
     return _this;

@@ -23,7 +23,7 @@ module.exports = _aws = {
     },
     pop_interest_results:function(interest, options){
         var objSearch = {
-            ResponseGroup:'Images,ItemAttributes',
+            ResponseGroup:'Images,ItemAttributes,Similarities',
             SearchIndex: "Blended",
             Keywords:interest.name
         }
