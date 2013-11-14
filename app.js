@@ -60,23 +60,33 @@ app.get('/', function(req, res){
 });
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     req.facebook.api('/me/friends', function(err, data) {
-        res.writeHead(200, {'Content-Type': 'text/plain'});
-        console.log(data);
-        req.facebook.api('/' + data.data[2].id + '/likes', function(err, _data){
-            if(err){
-                res.end(JSON.stringify(err));
-            }else{
-                res.end(JSON.stringify(_data));
+        partials.main = 'partials/product_board';
+        return res.render(
+            'index',
+            {
+                friends: data,
+                friends_json: JSON.stringify(data),
+                partials: partials
             }
-        });
+        );
 
-        //res.end(JSON.stringify(data));
-        /*games
-        books
-        likes*/
+
     });
 });
 
+
+app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
+    if(!req.query.fbuid){
+        res.end({ 'error':'missing query parameter of "' + req.query.fbuid + '"'});
+    }
+    req.facebook.api('/' + req.query.fbuid + '/likes', function(err, _data){
+        if(err){
+            res.end(JSON.stringify(err));
+        }else{
+            res.end(JSON.stringify(_data));
+        }
+    });
+});
 
 app.get('/search', function(req, res){
 
