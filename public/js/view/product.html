@@ -10,11 +10,17 @@
             <a href="{{product.DetailPageURL}}" target='_blank'>{{product_short_title}}</a>
         </p>
         <p class="price">
-            <span class="cur">$</span>
-            <span class="total">{{product.ItemAttributes.ListPrice.Amount}}</span>
+            <!--<span class="cur">$</span>-->
+            <span class="total">{{product.ItemAttributes.ListPrice.FormattedPrice}}</span>
         </p>
         <p class="price">
-            <span>Based in their interest in <a href='https://www.facebook.com/{{product.interest.id}}' target='_blank'>{{product.interest.name}}</a></span>
+            <span>
+                Based in their interest in
+                <a href='https://www.facebook.com/{{product.interest.id}}' target='_blank'>{{product.interest.name}}</a> -
+                <a href='https://www.facebook.com/{{product.interest.parent.id}}' target='_blank'>{{product.interest.parent.name}}</a>
+
+
+            </span>
         </p>
        <!-- <a href="" class="details-expand" data-target="details-{{product.ASIN}}">+</a>-->
     </div>

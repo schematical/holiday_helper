@@ -44,6 +44,7 @@
     <script src="js/control/product.js"></script>
     <script src="js/control/hello.js"></script>
     <script src="js/control/friend.js"></script>
+    <script src="js/control/view_more.js"></script>
 
 </head>
 <body class="product-board">

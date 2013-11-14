@@ -3,92 +3,9 @@ var express = require('express');
 var app = express();
 var http = require('http');
 
-function pop_interest_results(interest, options){
-    if(!interest.category_list){
-        return;
-    }
-    interest.category_list.push({
-        id:interest.id,
-        name:interest.name
-    });
-    for(var ii in interest.category_list){
+var _aws = require('./_aws');
 
-        var objSearch = {
-            ResponseGroup:'Images,ItemAttributes',
-            SearchIndex: "Blended",//"Books",
-            Keywords:interest.category_list[ii].name
-        }
-        console.log('In:' + interest.name);
-        var objDeferred = {
-            interest:interest,
-            _done:function(data, interest){
 
-                options.results.push({
-                    Items:data.Items,
-                    interest: interest
-                });
-                options.arrDeferred.pop();
-                if(options.arrDeferred.length == 0){
-                    var arrReturn = [];
-                    for(var i in options.results){
-
-                        if(options.results[i].Items.Item){
-                            for(var ii in options.results[i].Items.Item){
-                                if(options.results[i].Items.Item[ii].ItemAttributes){
-                                    options.results[i].Items.Item[ii].interest = options.results[i].interest;
-                                    console.log(options.results[i].interest.name);
-                                    arrReturn.push(
-                                        options.results[i].Items.Item[ii]
-                                    );
-                                }
-                            }
-                        }
-                    }
-
-                    options.done(shuffle(arrReturn));
-                }
-            },
-            _error:function(err){
-                options.arrDeferred.pop();
-                if(options.arrDeferred.length == 0){
-
-                    options.done(shuffle(arrReturn));
-
-                }
-            }
-        };
-        prodAdv.call("ItemSearch", objSearch, function(err, result) {
-            if(err){
-                objDeferred._error(err);
-            }else{
-                objDeferred._done(result, interest);
-            }
-        });
-        options.arrDeferred.push(objDeferred);
-    }
-}
-//TODO: Move this
-function shuffle(array) {
-    var currentIndex = array.length
-        , temporaryValue
-        , randomIndex
-        ;
-
-    // While there remain elements to shuffle...
-    while (0 !== currentIndex) {
-
-        // Pick a remaining element...
-        randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
-
-        // And swap it with the current element.
-        temporaryValue = array[currentIndex];
-        array[currentIndex] = array[randomIndex];
-        array[randomIndex] = temporaryValue;
-    }
-
-    return array;
-}
 
 var config = {
     amazon:{
@@ -166,7 +83,7 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
         res.end({ 'error':'missing query parameter of "' + req.query.fbuid + '"'});
     }
     req.facebook.api('/' + req.query.fbuid + '/likes', function(err, data){
-        var interests = shuffle(data.data);
+        var interests = data.data;
         var options = {
             arrDeferred:[],
             results:[],
@@ -174,13 +91,63 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
                 res.end(JSON.stringify(data));
             }
         };
-
-        for(var i = 0; i < 10; i++){
-
-            if(interests[i]){
-                pop_interest_results(interests[i], options);
-
+        var cats = {};
+        for(var i in interests){
+            var strAppend = interests[i].name.split(' ')[0];
+            if(!cats[interests[i].id]){
+                cats[interests[i].id] = {
+                    'id':interests[i].id,
+                    'name':interests[i].name,
+                    'count':0
+                }
             }
+            cats[interests[i].id].count += 1;
+            if(interests[i].category){
+                cats[interests[i].category] = {
+                    'id':interests[i].category,
+                    'name':interests[i].category + ' ' + strAppend,
+                    'count':0,
+                    'parent':{
+                        'name':interests[i].name,
+                        'id':interests[i].id
+                    }
+                };
+                cats[interests[i].category].count += 1;
+            }
+            if(interests[i].category_list){
+                for(var ii in interests[i].category_list){
+                    var cat = interests[i].category_list[ii];
+                    if(!cats[cat.id]){
+                        cats[cat.id] = {
+                            'id':cat.id,
+                            'name':cat.name + ' ' + strAppend,
+                            'count':0,
+                            'parent':{
+                                'name':interests[i].name ,
+                                'id':interests[i].id
+                            }
+                        }
+                    }
+                    cats[cat.id].count += 1;
+                }
+            }
+        }
+        var cats_array = [];
+        for(var i in cats){
+            cats_array.push(cats[i]);
+        }
+        cats_array.sort(function(a,b){
+            var a = a.count;
+            var b = b.count;
+            return a>b?-1:a<b?1:0;
+        });
+        console.log(cats_array);
+
+
+        for(var i in cats_array){
+
+            _aws.pop_interest_results(cats_array[i], options);
+
         }
     });
 });

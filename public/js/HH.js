@@ -9,8 +9,10 @@
      * @private
      */
     var _hh = {
+        friend_page:-1,
         friend_data:[],
         pageSize: 20,
+        product_page:-1,
         product_data:[]
     }
     var api = function(strEndpoint,strMethod, objData){
@@ -34,15 +36,7 @@
         );
         return objDefered.promise();
     }
-    _PopulateProducts  = function(data){
-        _hh.product_data = data;
-        for(var i = 0; i < _hh.pageSize; i++){
-            var ctlProduct = new HH.Controls.product(
-                _hh.product_data[i]
-            );
-            HH.AddControl(ctlProduct);
-        }
-    }
+
     window.HH = HH = {
         Controls:{
 
@@ -60,6 +54,9 @@
             }
             $('#product-board').append(ctl.jEle);
         },
+        EmptyControls:function(){
+            $('#product-board').empty();
+        },
         Search:function(strSearch, strCatigory){
             api(
                 '/search',
@@ -76,13 +73,19 @@
                 if(data.data){
                     data = data.data;
                 }
+                _hh.friend_page = -1;
                 _hh.friend_data = data;
-                HH.AppendFriends(0);
+                HH.AppendFriends();
 
             }
         },
         AppendFriends:function(intPage){
-            for(var i = intPage * _hh.pageSize; i < (intPage + 1 * _hh.pageSize); i++){
+            if(intPage){
+                _hh.friend_page = intPage;
+            }else{
+                _hh.friend_page = _hh.friend_page + 1;
+            }
+            for(var i = _hh.friend_page  * _hh.pageSize; i < (_hh.friend_page  + 1 * _hh.pageSize); i++){
                 if(_hh.friend_data[i]){
                     var ctlFriend = new HH.Controls.friend(
                         _hh.friend_data[i]
@@ -90,8 +93,15 @@
                     HH.AddControl(ctlFriend);
 
                     console.log(i);
+                }else{
+                    return;
                 }
             }
+            var ctlFriend = new HH.Controls.view_more({
+                callback:HH.AppendFriends
+            });
+            HH.AddControl(ctlFriend);
+
         },
         PopFriendSugestion:function(objFriend){
             api(
@@ -100,9 +110,34 @@
                 {
                     'fbuid': objFriend.id
                 }
-            ).done(
-                _PopulateProducts
-            ).fail(_error);
+            ).done(function(data){
+                HH.EmptyControls();
+                _hh.product_page = 0;
+                _hh.product_data = data;
+                HH.PopulateProducts(0);
+
+            }).fail(_error);
+        },
+        PopulateProducts:function(intPage){
+            if(intPage){
+                _hh.product_page = intPage;
+            }else{
+                _hh.product_page = _hh.product_page + 1;
+            }
+            for(var i = _hh.product_page * _hh.pageSize; i < (_hh.product_page + 1) *_hh.pageSize; i++){
+                if(_hh.product_data[i]){
+                    var ctlProduct = new HH.Controls.product(
+                        _hh.product_data[i]
+                    );
+                    HH.AddControl(ctlProduct);
+                }else{
+                    return;
+                }
+            }
+            var ctlFriend = new HH.Controls.view_more({
+                callback:HH.PopulateProducts
+            });
+            HH.AddControl(ctlFriend);
         }
     };
 
