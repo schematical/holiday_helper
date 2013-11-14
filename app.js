@@ -3,6 +3,70 @@ var express = require('express');
 var app = express();
 var http = require('http');
 
+function pop_interest_results(interest, options){
+    if(!interest.category_list){
+        return;
+    }
+    interest.category_list.push({
+        id:interest.id,
+        name:interest.name
+    });
+    for(var ii in interest.category_list){
+
+        var objSearch = {
+            ResponseGroup:'Images,ItemAttributes',
+            SearchIndex: "Blended",//"Books",
+            Keywords:interest.category_list[ii].name
+        }
+        console.log('In:' + interest.name);
+        var objDeferred = {
+            interest:interest,
+            _done:function(data, interest){
+
+                options.results.push({
+                    Items:data.Items,
+                    interest: interest
+                });
+                options.arrDeferred.pop();
+                if(options.arrDeferred.length == 0){
+                    var arrReturn = [];
+                    for(var i in options.results){
+
+                        if(options.results[i].Items.Item){
+                            for(var ii in options.results[i].Items.Item){
+                                if(options.results[i].Items.Item[ii].ItemAttributes){
+                                    options.results[i].Items.Item[ii].interest = options.results[i].interest;
+                                    console.log(options.results[i].interest.name);
+                                    arrReturn.push(
+                                        options.results[i].Items.Item[ii]
+                                    );
+                                }
+                            }
+                        }
+                    }
+
+                    options.done(shuffle(arrReturn));
+                }
+            },
+            _error:function(err){
+                options.arrDeferred.pop();
+                if(options.arrDeferred.length == 0){
+
+                    options.done(shuffle(arrReturn));
+
+                }
+            }
+        };
+        prodAdv.call("ItemSearch", objSearch, function(err, result) {
+            if(err){
+                objDeferred._error(err);
+            }else{
+                objDeferred._done(result, interest);
+            }
+        });
+        options.arrDeferred.push(objDeferred);
+    }
+}
 //TODO: Move this
 function shuffle(array) {
     var currentIndex = array.length
@@ -103,57 +167,19 @@ app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_inte
     }
     req.facebook.api('/' + req.query.fbuid + '/likes', function(err, data){
         var interests = shuffle(data.data);
-        var arrDeferred = [];
-        var results = [];
+        var options = {
+            arrDeferred:[],
+            results:[],
+            done:function(data){
+                res.end(JSON.stringify(data));
+            }
+        };
+
         for(var i = 0; i < 10; i++){
+
             if(interests[i]){
-                for(var ii in interests[i].category_list){
-                    var objSearch = {
-                        ResponseGroup:'Images,ItemAttributes',
-                        SearchIndex: "Blended",//"Books",
-                        Keywords:interests[i].category_list[ii].name
-                    }
-                    var objDeferred = {
-                        interest:interests[i],
-                         _done:function(data){
-                            results.push(data);
-                            arrDeferred.pop();
-                            if(arrDeferred.length == 0){
-                                var arrReturn = [];
-                                for(var i in results){
+                pop_interest_results(interests[i], options);
 
-                                    if(results[i].Items.Item){
-                                        for(var ii in results[i].Items.Item){
-                                            if(results[i].Items.Item[ii].ItemAttributes){
-                                                results[i].Items.Item[ii].interest = results[i].interest;
-                                                arrReturn.push(
-                                                    results[i].Items.Item[ii]
-                                                );
-                                            }
-                                        }
-                                    }
-                                }
-
-                                res.end(JSON.stringify(shuffle(arrReturn)));
-                            }
-                         },
-                        _error:function(err){
-                            arrDeferred.pop();
-                            if(arrDeferred.length == 0){
-                                res.end(JSON.stringify(results));
-                            }
-                        }
-                    };
-                    prodAdv.call("ItemSearch", objSearch, function(err, result) {
-                        if(err){
-                            objDeferred._error(err);
-                        }else{
-                            result.interest = objDeferred.interest;
-                            objDeferred. _done(result);
-                        }
-                    });
-                    arrDeferred.push(objDeferred);
-                }
             }
         }
     });

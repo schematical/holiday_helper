@@ -38,7 +38,7 @@
         _hh.product_data = data;
         for(var i = 0; i < _hh.pageSize; i++){
             var ctlProduct = new HH.Controls.product(
-                _hh.pageSize[i]
+                _hh.product_data[i]
             );
             HH.AddControl(ctlProduct);
         }
