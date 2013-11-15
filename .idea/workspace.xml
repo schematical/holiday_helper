@@ -39,7 +39,7 @@
     <file path="/shopfrog.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384381377672" ignored="false" />
     <file path="/hello.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384386914280" ignored="false" />
     <file path="/hello.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481735756" ignored="false" />
-    <file path="/header_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384383811957" ignored="false" />
+    <file path="/header_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384524116049" ignored="false" />
     <file path="/friend.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384486268539" ignored="false" />
     <file path="/friend.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384486814934" ignored="false" />
     <file path="/product_board.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384387752026" ignored="false" />
@@ -72,7 +72,7 @@
     <file path="/settings.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462142150" ignored="false" />
     <file path="/loading.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462255255" ignored="false" />
     <file path="/loading.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462344314" ignored="false" />
-    <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384495999810" ignored="false" />
+    <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384524224206" ignored="false" />
     <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384523208542" ignored="false" />
     <file path="/about.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384496287579" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,7 +106,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="49" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header_nav.hjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="161" column="27" selection-start="7505" selection-end="7505" vertical-scroll-proportion="-6.4166665">
               <folding />
             </state>
           </provider>
@@ -123,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.hjs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.hjs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="8" selection-start="1880" selection-end="1882" vertical-scroll-proportion="0.8172043">
+            <state line="37" column="8" selection-start="1880" selection-end="1882" vertical-scroll-proportion="2.877551">
               <folding />
             </state>
           </provider>
@@ -135,7 +144,7 @@
       <file leaf-file-name="landing.hjs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/landing.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="10" selection-start="3596" selection-end="3596" vertical-scroll-proportion="-52.5">
+            <state line="64" column="0" selection-start="2876" selection-end="2876" vertical-scroll-proportion="4.125">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -163,10 +172,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer_nav.hjs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="footer_nav.hjs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="-4.0">
+            <state line="38" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.48453608">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
@@ -185,22 +194,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/control/search-box.js" />
         <option value="$PROJECT_DIR$/public/js/control/view_more.js" />
         <option value="$PROJECT_DIR$/public/js/control/HHControlBase.js" />
         <option value="$PROJECT_DIR$/public/js/view/product.html" />
         <option value="$PROJECT_DIR$/public/js/control/friend.js" />
         <option value="$PROJECT_DIR$/public/js/view/friend.html" />
-        <option value="$PROJECT_DIR$/views/partials/header_nav.hjs" />
         <option value="$PROJECT_DIR$/public/js/control/product.js" />
-        <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
         <option value="$PROJECT_DIR$/views/partials/about.hjs" />
         <option value="$PROJECT_DIR$/views/partials/hello.hjs" />
         <option value="$PROJECT_DIR$/views/partials/index.hjs" />
         <option value="$PROJECT_DIR$/public/js/HH.js" />
         <option value="$PROJECT_DIR$/_config.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.hjs" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/partials/header_nav.hjs" />
+        <option value="$PROJECT_DIR$/views/partials/landing.hjs" />
+        <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
       </list>
     </option>
   </component>
@@ -572,28 +581,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="89.208336">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="11" selection-start="659" selection-end="659" vertical-scroll-proportion="0.4329897">
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="-4.0">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,17 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/landing.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="10" selection-start="3596" selection-end="3596" vertical-scroll-proportion="-52.5">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="34" selection-start="875" selection-end="875" vertical-scroll-proportion="0.73170733">
@@ -648,15 +629,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="49" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.0">
+        <state line="15" column="0" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="27" selection-start="7505" selection-end="7505" vertical-scroll-proportion="-6.4166665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/landing.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2876" selection-end="2876" vertical-scroll-proportion="4.125">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.hjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="8" selection-start="1880" selection-end="1882" vertical-scroll-proportion="0.8172043">
+        <state line="37" column="8" selection-start="1880" selection-end="1882" vertical-scroll-proportion="2.877551">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="2304" selection-end="2304" vertical-scroll-proportion="0.48453608">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

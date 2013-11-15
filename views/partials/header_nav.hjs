@@ -1,6 +1,6 @@
 <header class="navbar navbar-fixed-top clearfix">
 
-<a class="current brand" href="index.html">Holiday Helper</a>
+<a class="current brand" href="/">Holiday Helper</a>
 
 <!--<div id="nav-basket" class="basket">
     <a href="shopping-cart.html" class="basket-link">
@@ -33,7 +33,7 @@
 <nav class="navbar-collapse collapse" id="main-nav">
     <ul class="nav">
         <li class="current active">
-            <a href="index.html" class="current top-level flat">Home</a>
+            <a href="/" class="current top-level flat">Home</a>
         </li>
         <!--<li>
             <a href="collection.html" class="top-level">Swimwear</a>
@@ -159,7 +159,7 @@
             </div>
         </li>-->
 
-        <li><a href="about.html" class="top-level flat">About</a></li>
+        <li><a href="/about" class="top-level flat">About</a></li>
     </ul>
 </nav><!--/.nav-collapse -->
 

@@ -12,15 +12,19 @@ var config = require('./_config')();
 
 var aws = require("aws-lib");
 
+var Facebook = require('facebook-node-sdk');
+
 prodAdv = aws.createProdAdvClient(
     config.amazon.access_key_id,
     config.amazon.secret_access_key,
     config.amazon.assoc_tag
 );
 
-var Facebook = require('facebook-node-sdk');
 
-
+process.on('uncaughtException', function (err) {
+    console.error(err);
+    console.log("Node NOT Exiting...");
+});
 
 
 
