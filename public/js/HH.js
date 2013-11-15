@@ -71,8 +71,7 @@
             HH.AddControl(ctlSearch);*/
             _hh.davis = Davis(function () {
                 this.get('/', function (req) {
-                    var ctlHello = new HH.Controls.hello();
-                    HH.AddControl(ctlHello)
+
                 })
             });
 
@@ -223,4 +222,4 @@
     };
 
 })(window);
-$(function(){ HH.Init(); });
+$(function(){ HH.Init(); })

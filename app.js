@@ -38,13 +38,13 @@ app.configure(function () {
 });
 
 app.get('/', function(req, res){
-    console.log("hti");
+
     req.facebook.getUser(function(err, user) {
         console.log(user);
         if(user != 0){
             res.redirect(302, '/start');
         }
-        config.partials.main = 'partials/product_board';
+        config.partials.main = 'partials/landing';
         return res.render(
             'index',
             {

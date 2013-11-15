@@ -35,7 +35,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/shopfrog.js"></script>
-    <!--- HH SCRIPTS --->
+    <!-- HH SCRIPTS -->
     <script src="js/mustache.js"></script>
     <script src="lib/mustache/jquery.mustache.js"></script>
     <script src="lib/davis.js/davis.js"></script>
