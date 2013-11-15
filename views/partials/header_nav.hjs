@@ -2,7 +2,7 @@
 
 <a class="current brand" href="index.html">Holiday Helper</a>
 
-<div id="nav-basket" class="basket">
+<!--<div id="nav-basket" class="basket">
     <a href="shopping-cart.html" class="basket-link">
         <div class="basket-count">3</div>
     </a>
@@ -16,28 +16,13 @@
                 </a>
                 <a href="" class="remove-basket-item">remove</a>
             </li>
-            <li>
-                <a href="product.html" class="basket-item">
-                    <img src="img/product-2-small.jpg" alt="" />
-                    <p>StrappyFrog Classic</p>
-                    <p class="price">1 x <span class="cur">$</span><span class="total">22.00</span></p>
-                </a>
-                <a href="" class="remove-basket-item">remove</a>
-            </li>
-            <li>
-                <a href="product.html" class="basket-item">
-                    <img src="img/product-1-small.jpg" alt="" />
-                    <p>BeachFront Frog</p>
-                    <p class="price">1 x <span class="cur">$</span><span class="total">20.00</span></p>
-                </a>
-                <a href="" class="remove-basket-item">remove</a>
-            </li>
+
             <li class="drop-link-li">
                 <a href="shopping-cart.html" class="drop-link">View full<br>basket</a>
             </li>
         </ul>
     </div>
-</div>
+</div>-->
 
 <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     <span class="icon-bar"></span>

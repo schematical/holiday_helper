@@ -176,6 +176,15 @@ app.get('/search', function(req, res){
         }
     })
 });
+app.get('/about', function (req, res) {
 
+    config.partials.main = 'partials/about';
+    return res.render(
+        'index',
+        {
+            partials: config.partials
+        }
+    );
+});
 app.listen(config.port);
 console.log('Listening on port ' + config.port);

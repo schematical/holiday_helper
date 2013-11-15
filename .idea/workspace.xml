@@ -5,7 +5,7 @@
     <ignored path="holiday_helper.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384301891823" ignored="false" />
-    <file path="/app.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384471979980" ignored="false" />
+    <file path="/app.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384495332313" ignored="false" />
     <file path="/basefacebook.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384303862797" ignored="false" />
     <file path="/aws.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384349788721" ignored="false" />
     <file path="/prodAdv.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384349415194" ignored="false" />
@@ -72,8 +72,9 @@
     <file path="/settings.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462142150" ignored="false" />
     <file path="/loading.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462255255" ignored="false" />
     <file path="/loading.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462344314" ignored="false" />
-    <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384465471443" ignored="false" />
+    <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384495999810" ignored="false" />
     <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384480384501" ignored="false" />
+    <file path="/about.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384496287579" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,16 +97,7 @@
       <file leaf-file-name="HH.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/HH.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-5.6">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product.bkup.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/view/product.bkup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-1.4">
               <folding />
             </state>
           </provider>
@@ -114,27 +106,27 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="29" selection-start="1553" selection-end="1557" vertical-scroll-proportion="0.0">
+            <state line="186" column="6" selection-start="5347" selection-end="5347" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
+      <file leaf-file-name="about.hjs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/partials/about.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="482" selection-end="482" vertical-scroll-proportion="-2.125">
+            <state line="29" column="12" selection-start="1398" selection-end="1404" vertical-scroll-proportion="0.48453608">
               <folding>
-                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="product.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="12" selection-start="808" selection-end="838" vertical-scroll-proportion="0.77134144">
+            <state line="6" column="107" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -155,8 +147,20 @@
       <file leaf-file-name="header_nav.hjs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="6" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-24.375">
+            <state line="8" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="89.208336">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer_nav.hjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="-4.0">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,15 +183,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HHControlBase.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/control/HHControlBase.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -198,11 +193,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/partials/loading.hjs" />
         <option value="$PROJECT_DIR$/_aws.js" />
-        <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
         <option value="$PROJECT_DIR$/views/index.hjs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/_config.js" />
         <option value="$PROJECT_DIR$/public/js/control/hello.js" />
         <option value="$PROJECT_DIR$/public/js/control/search-box.js" />
@@ -211,9 +203,12 @@
         <option value="$PROJECT_DIR$/public/js/HH.js" />
         <option value="$PROJECT_DIR$/public/js/view/product.html" />
         <option value="$PROJECT_DIR$/public/js/control/friend.js" />
-        <option value="$PROJECT_DIR$/public/js/control/product.js" />
-        <option value="$PROJECT_DIR$/views/partials/header_nav.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/friend.html" />
+        <option value="$PROJECT_DIR$/views/partials/header_nav.hjs" />
+        <option value="$PROJECT_DIR$/public/js/control/product.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
+        <option value="$PROJECT_DIR$/views/partials/about.hjs" />
       </list>
     </option>
   </component>
@@ -421,9 +416,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views/partials" />
       <recent name="$PROJECT_DIR$/public/js/view" />
       <recent name="$PROJECT_DIR$/public/js/control" />
-      <recent name="$PROJECT_DIR$/views/partials" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -554,27 +549,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/facebook-node-sdk/test/facebook.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="48" selection-start="2791" selection-end="2791" vertical-scroll-proportion="2.984756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/facebook-node-sdk/lib/facebook.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="48" selection-start="1393" selection-end="1436" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/control/search-box.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="3" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
@@ -610,20 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="29" selection-start="1553" selection-end="1557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="6" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-24.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
@@ -648,26 +608,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="107" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-1.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="33" selection-start="293" selection-end="293" vertical-scroll-proportion="89.208336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="6" selection-start="5347" selection-end="5347" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="482" selection-end="482" vertical-scroll-proportion="-2.125">
+        <state line="15" column="11" selection-start="659" selection-end="659" vertical-scroll-proportion="0.4329897">
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
+    <entry file="file://$PROJECT_DIR$/public/js/view/hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-5.6">
+        <state line="9" column="12" selection-start="0" selection-end="3274" vertical-scroll-proportion="0.46391752">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+    <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="12" selection-start="808" selection-end="838" vertical-scroll-proportion="0.77134144">
-          <folding />
+        <state line="13" column="45" selection-start="713" selection-end="713" vertical-scroll-proportion="-4.0">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#form#0;n#div#3;n#div#0;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/about.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="12" selection-start="1398" selection-end="1404" vertical-scroll-proportion="0.48453608">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
