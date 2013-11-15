@@ -69,7 +69,7 @@
         Init:function(){
             /*var ctlSearch = new HH.Controls['search-box']();
             HH.AddControl(ctlSearch);*/
-            _hh.davis = Davis(function () {
+           /* _hh.davis = Davis(function () {
                 this.get('/', function (req) {
 
                 })
@@ -80,7 +80,7 @@
                 setTimeout(function(){
                     document.location.href = '#';
                 }, 500);
-            }
+            }*/
 
 
 
