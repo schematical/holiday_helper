@@ -28,23 +28,23 @@
     <file path="10.10.0.55/phonegap/lib/kendo_ui_mobile/js/kendo.all.min.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384363617351" ignored="false" />
     <file path="10.10.0.55/phonegap/js/jquery-1.10.2.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384363701339" ignored="false" />
     <file path="/index.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384468823047" ignored="false" />
-    <file path="/HH.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384469674035" ignored="false" />
-    <file path="/HHControlBase.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384442393050" ignored="false" />
+    <file path="/HH.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384485616693" ignored="false" />
+    <file path="/HHControlBase.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384482788691" ignored="false" />
     <file path="/search.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384375950349" ignored="false" />
-    <file path="/search-box.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384378092220" ignored="false" />
+    <file path="/search-box.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481747423" ignored="false" />
     <file path="/search-box.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384377681818" ignored="false" />
-    <file path="/product.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384445339056" ignored="false" />
-    <file path="/product.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384445577327" ignored="false" />
+    <file path="/product.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384486371507" ignored="false" />
+    <file path="/product.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384483708341" ignored="false" />
     <file path="/a.dummy" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384380653620" ignored="false" />
     <file path="/shopfrog.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384381377672" ignored="false" />
     <file path="/hello.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384386914280" ignored="false" />
-    <file path="/hello.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384382995165" ignored="false" />
+    <file path="/hello.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481735756" ignored="false" />
     <file path="/header_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384383811957" ignored="false" />
-    <file path="/friend.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384388726639" ignored="false" />
-    <file path="/friend.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384443302578" ignored="false" />
+    <file path="/friend.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384486268539" ignored="false" />
+    <file path="/friend.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384486814934" ignored="false" />
     <file path="/product_board.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384387752026" ignored="false" />
     <file path="/view_more.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384433486505" ignored="false" />
-    <file path="/view_more.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384434185893" ignored="false" />
+    <file path="/view_more.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481758468" ignored="false" />
     <file path="/_aws.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384439652002" ignored="false" />
     <file path="$PROJECT_DIR$/../mi_netsuite/apps/protected/vendor/mi/MIApiControlerBase.php" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384454982320" ignored="false" />
     <file path="/MIApiControlerBase.php" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384451743794" ignored="false" />
@@ -73,7 +73,7 @@
     <file path="/loading.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462255255" ignored="false" />
     <file path="/loading.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384462344314" ignored="false" />
     <file path="/footer_nav.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384465471443" ignored="false" />
-    <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384470139648" ignored="false" />
+    <file path="/_config.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384480384501" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +96,16 @@
       <file leaf-file-name="HH.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/HH.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-9.72">
+            <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-5.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.bkup.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/view/product.bkup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -105,16 +114,7 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_aws.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_aws.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
+            <state line="61" column="29" selection-start="1553" selection-end="1557" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,7 +123,7 @@
       <file leaf-file-name="product.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="36" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-6.5">
+            <state line="22" column="188" selection-start="1182" selection-end="1182" vertical-scroll-proportion="-13.75">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -134,54 +134,55 @@
       <file leaf-file-name="product.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+            <state line="23" column="5" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="facebook.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/facebook-node-sdk/lib/facebook.js">
+      <file leaf-file-name="friend.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/view/friend.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="48" selection-start="1393" selection-end="1436" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="loading.hjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/loading.hjs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="954" selection-end="1028" vertical-scroll-proportion="-9.375">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.hjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.hjs">
+      <file leaf-file-name="header_nav.hjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="35" selection-start="2038" selection-end="2038" vertical-scroll-proportion="-8.125">
+            <state line="39" column="6" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-24.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer_nav.hjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
+      <file leaf-file-name="friend.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="883" selection-end="883" vertical-scroll-proportion="-10.625">
+            <state line="12" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.js">
+      <file leaf-file-name="hello.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/control/hello.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.5030488">
+            <state line="16" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HHControlBase.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/control/HHControlBase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="14" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -197,28 +198,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/js/control/friend.js" />
-        <option value="$PROJECT_DIR$/public/js/view/view_more.html" />
-        <option value="$PROJECT_DIR$/public/js/control/view_more.js" />
-        <option value="$PROJECT_DIR$/public/js/control/hello.js" />
-        <option value="$PROJECT_DIR$/public/js/control/HHControlBase.js" />
-        <option value="$PROJECT_DIR$/public/js/view/friend.html" />
-        <option value="$PROJECT_DIR$/public/js/control/product.js" />
-        <option value="$PROJECT_DIR$/public/js/view/product.html" />
-        <option value="$PROJECT_DIR$/public/js/view/loading.html" />
         <option value="$PROJECT_DIR$/views/partials/loading.hjs" />
         <option value="$PROJECT_DIR$/_aws.js" />
         <option value="$PROJECT_DIR$/views/partials/footer_nav.hjs" />
         <option value="$PROJECT_DIR$/views/index.hjs" />
-        <option value="$PROJECT_DIR$/public/js/HH.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/_config.js" />
+        <option value="$PROJECT_DIR$/public/js/control/hello.js" />
+        <option value="$PROJECT_DIR$/public/js/control/search-box.js" />
+        <option value="$PROJECT_DIR$/public/js/control/view_more.js" />
+        <option value="$PROJECT_DIR$/public/js/control/HHControlBase.js" />
+        <option value="$PROJECT_DIR$/public/js/HH.js" />
+        <option value="$PROJECT_DIR$/public/js/view/product.html" />
+        <option value="$PROJECT_DIR$/public/js/control/friend.js" />
+        <option value="$PROJECT_DIR$/public/js/control/product.js" />
+        <option value="$PROJECT_DIR$/views/partials/header_nav.hjs" />
+        <option value="$PROJECT_DIR$/public/js/view/friend.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1301" />
+    <option name="x" value="65" />
     <option name="y" value="764" />
     <option name="width" value="1303" />
     <option name="height" value="773" />
@@ -291,6 +292,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -305,7 +324,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="holiday_helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="control" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -399,7 +466,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1301" y="764" width="1303" height="773" extended-state="0" />
+    <frame x="65" y="764" width="1303" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -483,92 +550,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="51" />
+      <option name="time" value="52" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/hjs/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="610" selection-end="624" vertical-scroll-proportion="0.6859756">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/hello.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="2" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/HHControlBase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="49" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/friend.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="63" selection-start="109" selection-end="109" vertical-scroll-proportion="-0.625">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/loading.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="954" selection-end="1028" vertical-scroll-proportion="-9.375">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="36" selection-start="1712" selection-end="1712" vertical-scroll-proportion="-6.5">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavascriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="16" selection-start="2168" selection-end="2168" vertical-scroll-proportion="0.33231708">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_aws.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/footer_nav.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="883" selection-end="883" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/facebook-node-sdk/test/facebook.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="48" selection-start="2791" selection-end="2791" vertical-scroll-proportion="2.984756">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="35" selection-start="2038" selection-end="2038" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
@@ -580,31 +568,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+    <entry file="file://$PROJECT_DIR$/_config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="718" selection-end="718" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
+    <entry file="file://$PROJECT_DIR$/public/js/control/search-box.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="20" selection-start="2073" selection-end="2073" vertical-scroll-proportion="-9.72">
+        <state line="14" column="3" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/view_more.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="35" selection-start="2038" selection-end="2038" vertical-scroll-proportion="5.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/product.bkup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/HHControlBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="14" selection-start="505" selection-end="505" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="46" selection-start="5229" selection-end="5229" vertical-scroll-proportion="0.0">
+        <state line="61" column="29" selection-start="1553" selection-end="1557" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.js">
+    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="30" selection-start="353" selection-end="353" vertical-scroll-proportion="0.5030488">
+        <state line="199" column="29" selection-start="6035" selection-end="6035" vertical-scroll-proportion="-5.6">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header_nav.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="6" selection-start="1686" selection-end="1686" vertical-scroll-proportion="-24.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="27" selection-start="459" selection-end="459" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="188" selection-start="1182" selection-end="1182" vertical-scroll-proportion="-13.75">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/hello.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/friend.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

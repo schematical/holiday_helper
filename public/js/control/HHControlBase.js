@@ -2,24 +2,24 @@ var HHControlBase = function(objConfig){
     jQuery.extend(this, objConfig);
     var _this = this;
     this.jEle = $('<div></div>');
-    if(objConfig.tpl_loc){
-        $.Mustache.load('/js/view/' + objConfig.tpl_loc + '.html').done(function(tpl){
-            _this.tpl = Mustache.compile(tpl);
 
-            _this.Render();
-        });
-    }
+    _this.Render();
+
 
 }
 HHControlBase.prototype.Render = function(){
+    var _this = this;
+    if(!HH.Tpls[this.tpl_loc]){
+        $(window).one(this.tpl_loc + '-view-loaded', function(){
+            _this.Render();
+        });
+        return;
+    }
+    var strHtml = HH.Tpls[this.tpl_loc](this);
+    var _fillerEle = this.jEle;
+    this.jEle = $(strHtml);
+    _fillerEle.replaceWith(this.jEle);
 
-   /* var strHtml = $.Mustache.render(
-        this.tpl,
-        this
-    );*/
-    var strHtml = this.tpl(this);
-
-    this.jEle.html(strHtml);
     if(this.bindEvents){
         this.bindEvents();
     }

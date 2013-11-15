@@ -1,4 +1,4 @@
-HH.Controls.view_more = function(options){
+HH.AddControlBase('view_more', function(options){
     options.tpl_loc = 'view_more';
     var _this = new HHControlBase(options);
 
@@ -10,4 +10,4 @@ HH.Controls.view_more = function(options){
         });
     }
     return _this;
-};
+});

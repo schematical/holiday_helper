@@ -9,6 +9,7 @@
             <a href="{{product.DetailPageURL}}" target='_blank'>{{product_short_title}}</a>
         </p>
         <p class="price">
+            <!--<span class="cur">$</span>-->
             <span class="total">{{product.ItemAttributes.ListPrice.FormattedPrice}}</span>
         </p>
         <p class="price">
@@ -19,6 +20,17 @@
 
             </span>
         </p>
+        <!--<a href="" class="details-expand" data-target="details-{{product.ASIN}}">+</a-->>
     </div>
+  <!-- <div class="details-extra" id="details-{{product.ASIN}}">
+
+        <div style='padding:20Px;'>
+            {{#product.SimilarProducts.SimilarProduct}}
+                ASIN: "B004UMJQDG"
+                Title
+            {{/product.SimilarProducts.SimilarProduct}}
+        </div>
+    </div>-->
     <a class='btn-view-more-interest btn btn-bottom btn-atc qadd' data-interest-name='{{product.interest.name}}' data-interest-id='{{product.interest.id}}' href='#'>View More Like This</a>
+    <!--<a href="{{product.DetailPageURL}}" class="btn btn-bottom btn-atc qadd" target='_blank'>Purchase on Amazon</a>-->
 </div>

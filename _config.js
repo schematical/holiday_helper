@@ -7,6 +7,7 @@ module.exports = function(){
                 appId: '599161553452323',
                 secret: '6ac87a0d0cc6756ba6c8358405ef9b98'
             };
+        break;
         case 'prod':
         default:
             config.port = 3000;

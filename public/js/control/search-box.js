@@ -1,4 +1,4 @@
-HH.Controls['search-box'] = function(){
+HH.AddControlBase('search-box', function(){
     var _this = new HHControlBase({
         tpl_loc:'search-box'
     });
@@ -12,4 +12,4 @@ HH.Controls['search-box'] = function(){
         });
     }
     return _this;
-};
+});

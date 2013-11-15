@@ -1,4 +1,4 @@
-HH.Controls.hello = function(){
+HH.AddControlBase('hello', function(){
     var _this = new HHControlBase({
         tpl_loc:'hello'
     });
@@ -14,4 +14,4 @@ HH.Controls.hello = function(){
 
     }
     return _this;
-};
+});

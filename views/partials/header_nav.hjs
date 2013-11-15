@@ -2,7 +2,7 @@
 
 <a class="current brand" href="index.html">Holiday Helper</a>
 
-<!--<div id="nav-basket" class="basket">
+<div id="nav-basket" class="basket">
     <a href="shopping-cart.html" class="basket-link">
         <div class="basket-count">3</div>
     </a>
@@ -37,7 +37,7 @@
             </li>
         </ul>
     </div>
-</div>-->
+</div>
 
 <button type="button" class="btn navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
     <span class="icon-bar"></span>

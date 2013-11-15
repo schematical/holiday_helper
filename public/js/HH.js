@@ -11,7 +11,7 @@
     var _hh = {
         friend_page:-1,
         friend_data:[],
-        pageSize: 20,
+        pageSize: 50,
         product_page:-1,
         product_data:[],
         messages:{
@@ -60,6 +60,9 @@
     }
 
     window.HH = HH = {
+        Tpls:{
+
+        },
         Controls:{
 
         },
@@ -126,7 +129,7 @@
             }else{
                 _hh.friend_page = _hh.friend_page + 1;
             }
-            for(var i = _hh.friend_page  * _hh.pageSize; i < (_hh.friend_page  + 1 * _hh.pageSize); i++){
+            for(var i = _hh.friend_page  * _hh.pageSize; i < (_hh.friend_page  + 1) * _hh.pageSize; i++){
                 if(_hh.friend_data[i]){
                     var ctlFriend = new HH.Controls.friend(
                         _hh.friend_data[i]
@@ -185,26 +188,37 @@
             $('#div-loading').modal('show');
             $('#div-loading').find('.progress-bar').finish().css('width','0%').animate(
                 {width:'100%'},
-                10000,
+                15000,
                 function(){
-
+                    $('#div-loading').find('#myModalLabel').html('Sorry something must have gone wrong on our end. Please try again or contact us at <a href="mailto:mlea@schematical.com">mlea@schematical.com</a>');
+                    clearTimeout(_hh.modal_timeout);
                 }
             );
             var i_message = 0;
             $('#div-loading').find('#myModalLabel').text(messages[i_message]);
-            _hh.modal_timeout = setTimeout(function() {
+            function updateText() {
                 i_message = i_message + 1;
                 if(i_message > messages.length){
                     i_message = 0;
                 }
                 $('#div-loading').find('#myModalLabel').text(messages[i_message]);
-
-            }, 3000);
+                _hh.modal_timeout = setTimeout(updateText, 3000);
+            }
+            _hh.modal_timeout = setTimeout(updateText, 3000);
         },
         HideLoader:function(){
             $('#div-loading').find('.progress-bar').finish();
             $('#div-loading').modal('hide');
             clearTimeout(_hh.modal_timeout);
+        },
+        AddControlBase:function(name, fun){
+            HH.Controls[name] = fun;
+            $.Mustache.load('/js/view/' + name + '.html').done(function(tpl){
+
+                HH.Tpls[name] = Mustache.compile(tpl);
+                $(window).trigger(name + '-view-loaded');
+
+            });
         }
     };
 
