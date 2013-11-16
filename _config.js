@@ -26,9 +26,9 @@ module.exports = function(){
     };
     config.partials = {
 
-        header_nav:'partials/header_nav',
-        footer_nav:'partials/footer_nav',
-        loading:'partials/loading'
+        header_nav:'header_nav',
+        footer_nav:'footer_nav',
+        loading:'loading'
 
     }
     return config;

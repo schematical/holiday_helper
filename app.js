@@ -30,7 +30,7 @@ prodAdv = aws.createProdAdvClient(
 
 app.configure(function () {
     app.set('port', config.port);
-    app.set('views', __dirname + '/views');
+    app.set('views', __dirname + '/public/js/view');
     app.set('view engine', 'hjs');
     app.use(express.bodyParser());
     app.use(express.cookieParser());
@@ -48,7 +48,7 @@ app.get('/', function(req, res){
         if(user != 0){
             res.redirect(302, '/start');
         }
-        config.partials.main = 'partials/landing';
+        config.partials.main = 'landing';
         return res.render(
             'index',
             {
@@ -59,7 +59,7 @@ app.get('/', function(req, res){
 });
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     req.facebook.api('/me/friends', function(err, data) {
-        config.partials.main = 'partials/product_board';
+        config.partials.main = 'product_board';
         return res.render(
             'index',
             {
@@ -182,7 +182,7 @@ app.get('/search', function(req, res){
 });
 app.get('/about', function (req, res) {
 
-    config.partials.main = 'partials/about';
+    config.partials.main = 'about';
     return res.render(
         'index',
         {

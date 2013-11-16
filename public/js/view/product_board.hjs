@@ -1,0 +1,8 @@
+<script>
+    $(function(){
+        HH.SetFriendData({{{friends_json}}});
+    });
+</script>
+<div id="product-board" class="clearfix">
+
+</div> <!-- //end product-board -->

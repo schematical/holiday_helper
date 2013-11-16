@@ -1,0 +1,43 @@
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <p>&copy; 2013 HolidayHelper.co</p>
+                <p>
+                    <a href="https://www.google.com/search?q=pictures+of+puppies&safe=off&tbm=isch" target='_blank'>Pictures of Puppies</a> /
+                    <a href="http://www.youtube.com/results?search_query=cats+playing+with+babies&sm=3">Cats Playing with Babies</a> <!--/ <a href="">returns</a> / <a href="">delivery</a>-->
+                </p>
+            </div> <!-- //end span3 -->
+            <div class="col-sm-6 col-md-3">
+                <p>Why us?</p>
+                <p>
+                    <a href="/about">about us</a> /
+                    <a href="https://www.google.com/search?q=old+people+in+love&tbm=isch">elderly people in love</a><!-- /
+                    <a href="">promotions</a> /
+                    <a href="">press</a>-->
+                </p>
+            </div> <!-- //end span3 -->
+            <div class="col-sm-6 col-md-3">
+                <p>Social links</p>
+                <p>
+                    <a href="https://www.facebook.com/314779471996189">Facebook</a> /
+                    <a href="http://twitter.com/holidayhelperco">Twitter</a>
+                </p>
+            </div> <!-- //end span3 -->
+            <div class="col-sm-6 col-md-3">
+                <p>Get exclusive offers and news</p>
+                <form class="form-inline validate" action="http://schematical.us6.list-manage.com/subscribe/post?u=3565b8df39d26f84645b27784&amp;id=663bbc3eec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <input id="newsletter-email" type="email" value="" name="EMAIL"  placeholder="your email..." class="form-control required email" />
+
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" />
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                </form>
+            </div> <!-- //end span3 -->
+
+
+        </div>
+    </div>
+</footer>
