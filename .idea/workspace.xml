@@ -28,7 +28,7 @@
     <file path="10.10.0.55/phonegap/lib/kendo_ui_mobile/js/kendo.all.min.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384363617351" ignored="false" />
     <file path="10.10.0.55/phonegap/js/jquery-1.10.2.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384363701339" ignored="false" />
     <file path="/index.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384468823047" ignored="false" />
-    <file path="/HH.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384609829915" ignored="false" />
+    <file path="/HH.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384614425661" ignored="false" />
     <file path="/HHControlBase.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384482788691" ignored="false" />
     <file path="/search.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384375950349" ignored="false" />
     <file path="/search-box.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481747423" ignored="false" />
@@ -45,7 +45,7 @@
     <file path="/product_board.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384610687601" ignored="false" />
     <file path="/view_more.html" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384433486505" ignored="false" />
     <file path="/view_more.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384481758468" ignored="false" />
-    <file path="/_aws.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384612052654" ignored="false" />
+    <file path="/_aws.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384614313286" ignored="false" />
     <file path="$PROJECT_DIR$/../mi_netsuite/apps/protected/vendor/mi/MIApiControlerBase.php" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384454982320" ignored="false" />
     <file path="/MIApiControlerBase.php" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384451743794" ignored="false" />
     <file path="$PROJECT_DIR$/../mi_netsuite/apps/protected/controllers/ApiTimeBillController.bkup.php" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384447887863" ignored="false" />
@@ -78,6 +78,7 @@
     <file path="/landing.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384608232243" ignored="false" />
     <file path="/error.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384611452065" ignored="false" />
     <file path="/friend_board.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384612365902" ignored="false" />
+    <file path="/friend.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384614226154" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,28 +98,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="HH.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/HH.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="193" column="8" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.84">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0952381">
+            <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product_board.hjs" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/view/product_board.hjs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="15" selection-start="22" selection-end="29" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_aws.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_aws.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_aws.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="108" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
+            <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.47619048">
               <folding />
             </state>
           </provider>
@@ -136,7 +137,7 @@
       <file leaf-file-name="friend.hjs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/view/friend.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="134" selection-start="153" selection-end="271" vertical-scroll-proportion="-2.5">
+            <state line="1" column="14" selection-start="60" selection-end="70" vertical-scroll-proportion="-0.625">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -148,15 +149,6 @@
         <entry file="file://$PROJECT_DIR$/public/js/view/header_nav.hjs">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="46" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="friend.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="450" selection-end="462" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -185,7 +177,7 @@
       <file leaf-file-name="product.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="205" selection-end="253" vertical-scroll-proportion="0.0">
+            <state line="15" column="17" selection-start="551" selection-end="552" vertical-scroll-proportion="-8.0">
               <folding />
             </state>
           </provider>
@@ -208,21 +200,21 @@
         <option value="$PROJECT_DIR$/public/js/view/index.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/product_board.hjs" />
         <option value="$PROJECT_DIR$/_config.js" />
-        <option value="$PROJECT_DIR$/public/js/HH.js" />
         <option value="$PROJECT_DIR$/public/js/view/error.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/product.hjs" />
         <option value="$PROJECT_DIR$/public/js/control/product.js" />
-        <option value="$PROJECT_DIR$/_aws.js" />
         <option value="$PROJECT_DIR$/public/js/view/friend_board.hjs" />
-        <option value="$PROJECT_DIR$/public/js/view/friend.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/header_nav.hjs" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/js/view/friend.hjs" />
+        <option value="$PROJECT_DIR$/public/js/HH.js" />
+        <option value="$PROJECT_DIR$/_aws.js" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1302" />
+    <option name="x" value="64" />
     <option name="y" value="764" />
     <option name="width" value="1303" />
     <option name="height" value="773" />
@@ -437,8 +429,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1302" y="764" width="1303" height="773" extended-state="6" />
-    <editor active="false" />
+    <frame x="64" y="764" width="1303" height="773" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -546,13 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="8" selection-start="4566" selection-end="4566" vertical-scroll-proportion="-3.84">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/hjs/lib/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="0" selection-start="1069" selection-end="1069" vertical-scroll-proportion="1.0457317">
@@ -581,26 +566,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="205" selection-end="253" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/view/product.hjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="-2.6">
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_aws.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="108" selection-start="1947" selection-end="1947" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,22 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="450" selection-end="462" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/friend.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="134" selection-start="153" selection-end="271" vertical-scroll-proportion="-2.5">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/view/header_nav.hjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="46" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.75">
@@ -634,9 +589,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/friend.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="14" selection-start="60" selection-end="70" vertical-scroll-proportion="-0.625">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/friend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="450" selection-end="462" vertical-scroll-proportion="0.5487805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="551" selection-end="552" vertical-scroll-proportion="-8.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0952381">
+        <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/HH.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="193" column="8" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_aws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.47619048">
           <folding />
         </state>
       </provider>

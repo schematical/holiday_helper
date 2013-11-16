@@ -67,6 +67,9 @@
 
         },
         Init:function(){
+            $('.lnk-friend').click(function(){
+                HH.ShowLoader(_hh.messages.product);
+            })
             /*var ctlSearch = new HH.Controls['search-box']();
             HH.AddControl(ctlSearch);*/
            /* _hh.davis = Davis(function () {

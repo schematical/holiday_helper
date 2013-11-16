@@ -53,6 +53,7 @@ module.exports = _aws = {
                         }
                     }
                 }
+                console.log("Returning " + arrReturn.length +  " results");
                 options.done(_aws.shuffle(arrReturn));
             }
         }
@@ -144,8 +145,8 @@ module.exports = _aws = {
             });
 
 
-            var search_cats = cats_array.slice(0, 20);
-            console.log(search_cats);
+            var search_cats = _aws.shuffle(cats_array).slice(0, 10);
+            console.log("Searching " + search_cats.length +  " freind interests for " + fbuid);
             for(var i in search_cats){
                 _aws.pop_interest_results(search_cats[i], options);
 

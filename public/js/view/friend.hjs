@@ -1,5 +1,5 @@
 <div class="div-friend product medium cat-3">
-    <a href='/friend/{{id}}'>
+    <a class='lnk-friend' href='/friend/{{id}}'>
         <div class='row'>
             <div class='col-sm-4'>
                 <img src='http://graph.facebook.com/{{id}}/picture' alt="product title" data-img="product-2" class="img-responsive" />
