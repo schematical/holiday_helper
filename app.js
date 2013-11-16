@@ -21,10 +21,10 @@ prodAdv = aws.createProdAdvClient(
 );
 
 
-process.on('uncaughtException', function (err) {
+/*process.on('uncaughtException', function (err) {
     console.error(err);
     console.log("Node NOT Exiting...");
-});
+});*/
 
 
 
