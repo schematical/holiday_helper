@@ -99,7 +99,9 @@ app.get('/friend/:fbuid', Facebook.loginRequired({ scope: 'friends_likes, friend
                 },
                 products: data,
                 product_json: JSON.stringify(data),
-                partials: config.partials
+                partials: config.partials,
+                req:req,
+                config:config
             }
         );
     },function(){
@@ -114,7 +116,6 @@ app.get('/friend/:fbuid', Facebook.loginRequired({ scope: 'friends_likes, friend
 });
 
 app.get('/search', function(req, res){
-
 
     if(!(req.query.search && req.query.cat)){
         res.end(JSON.stringify({

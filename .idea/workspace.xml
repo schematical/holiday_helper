@@ -5,7 +5,7 @@
     <ignored path="holiday_helper.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384301891823" ignored="false" />
-    <file path="/app.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384613141601" ignored="false" />
+    <file path="/app.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384629805587" ignored="false" />
     <file path="/basefacebook.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384303862797" ignored="false" />
     <file path="/aws.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384349788721" ignored="false" />
     <file path="/prodAdv.js" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384349415194" ignored="false" />
@@ -79,6 +79,7 @@
     <file path="/error.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384611452065" ignored="false" />
     <file path="/friend_board.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384612365902" ignored="false" />
     <file path="/friend.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384614226154" ignored="false" />
+    <file path="/product.hjs" changelist="38e11f9f-6b6a-46ca-878b-0672d6d51cb1" time="1384630137788" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,7 @@
       <file leaf-file-name="HH.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/HH.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="193" column="8" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.84">
+            <state line="197" column="22" selection-start="5673" selection-end="5673" vertical-scroll-proportion="-9.84">
               <folding />
             </state>
           </provider>
@@ -110,16 +111,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
+            <state line="103" column="29" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_aws.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_aws.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_aws.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.47619048">
+            <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,16 +158,16 @@
       <file leaf-file-name="_config.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="14" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
+            <state line="13" column="27" selection-start="389" selection-end="397" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.hjs" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="product.hjs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/view/product.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="-2.6">
+            <state line="27" column="80" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.625">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -174,10 +175,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+      <file leaf-file-name="index.hjs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/view/index.hjs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="17" selection-start="551" selection-end="552" vertical-scroll-proportion="-8.0">
+            <state line="77" column="4" selection-start="3288" selection-end="3905" vertical-scroll-proportion="-19.0">
               <folding />
             </state>
           </provider>
@@ -197,24 +198,24 @@
         <option value="$PROJECT_DIR$/public/js/view/landing.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/friend.html" />
         <option value="$PROJECT_DIR$/public/js/control/friend.js" />
-        <option value="$PROJECT_DIR$/public/js/view/index.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/product_board.hjs" />
         <option value="$PROJECT_DIR$/_config.js" />
         <option value="$PROJECT_DIR$/public/js/view/error.hjs" />
-        <option value="$PROJECT_DIR$/public/js/view/product.hjs" />
         <option value="$PROJECT_DIR$/public/js/control/product.js" />
         <option value="$PROJECT_DIR$/public/js/view/friend_board.hjs" />
         <option value="$PROJECT_DIR$/public/js/view/header_nav.hjs" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/js/view/friend.hjs" />
         <option value="$PROJECT_DIR$/public/js/HH.js" />
         <option value="$PROJECT_DIR$/_aws.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/public/js/view/index.hjs" />
+        <option value="$PROJECT_DIR$/public/js/view/product.hjs" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
+    <option name="x" value="-1302" />
     <option name="y" value="764" />
     <option name="width" value="1303" />
     <option name="height" value="773" />
@@ -318,28 +319,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holiday_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="holiday_helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="control" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -429,7 +408,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="764" width="1303" height="773" extended-state="6" />
+    <frame x="-1302" y="764" width="1303" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -439,7 +418,7 @@
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24860558" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -524,13 +503,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/index.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2427" selection-end="2468" vertical-scroll-proportion="-10.416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/control/HHControlBase.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.41768292">
@@ -559,29 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="14" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/product.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="596" selection-end="596" vertical-scroll-proportion="-2.6">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/view/friend_board.hjs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="10" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/view/header_nav.hjs">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="46" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.75">
@@ -605,31 +554,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="17" selection-start="551" selection-end="552" vertical-scroll-proportion="-8.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="35" selection-start="2486" selection-end="2486" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/HH.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="193" column="8" selection-start="5455" selection-end="5455" vertical-scroll-proportion="-3.84">
+        <state line="197" column="22" selection-start="5673" selection-end="5673" vertical-scroll-proportion="-9.84">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/friend_board.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="40" selection-end="40" vertical-scroll-proportion="-1.25">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_aws.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.47619048">
+        <state line="55" column="72" selection-start="2391" selection-end="2391" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="29" selection-start="2868" selection-end="2868" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/control/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="11" selection-start="546" selection-end="577" vertical-scroll-proportion="0.7425743">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="27" selection-start="389" selection-end="397" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/index.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="4" selection-start="3288" selection-end="3905" vertical-scroll-proportion="-19.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/view/product.hjs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="80" selection-start="1357" selection-end="1357" vertical-scroll-proportion="0.625">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

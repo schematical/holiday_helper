@@ -45,6 +45,14 @@
     <script src="/js/control/product.js"></script>
     <script src="/js/control/friend.js"></script>
     <script src="/js/control/view_more.js"></script>
+    <style type="text/css" media="screen">
+        #custom-tweet-button a {
+            display: block;
+            padding: 2px 5px 2px 20px;
+            background: url('https://twitter.com/favicons/favicon.ico') 1px center no-repeat;
+            border: 1px solid #ccc;
+        }
+    </style>
 
 </head>
 <body class="product-board">
@@ -67,6 +75,15 @@
     ga('send', 'pageview');
 
 </script>
+<!--<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=321092171365778";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
 </body>
 </html>
 

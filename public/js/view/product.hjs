@@ -16,8 +16,18 @@
                 Based in their interest in
                 <a href='https://www.facebook.com/{{interest.id}}' target='_blank'>{{interest.name}}</a> -
                 <a href='https://www.facebook.com/{{interest.parent.id}}' target='_blank'>{{interest.parent.name}}</a>
-
             </span>
+        </p>
+        <hr />
+        <p>
+           <a target='_blank' href='https://www.facebook.com/sharer/sharer.php?app_id={{config.facebook.appId}}&sdk=joey&u={{DetailPageURL}}&display=popup'>
+                Facebook
+           </a>
+           <!--http://{{req.headers.host}}/friends/{{friend.id}}/gift/amazon/{{ESIN}}" -->
+            <div id="custom-tweet-button">
+                <a href="https://twitter.com/share?url={{DetailPageURL}}&related=holidayhelperco" target="_blank">Tweet</a>
+            </div>
+            <!--<a data-url="{{DetailPageURL}}" href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-hashtags='#holidayhelper' data-via='holidayhelperco'>Tweet</a>-->
         </p>
     </div>
     <a class='btn-view-more-interest btn btn-bottom btn-atc qadd' data-interest-name='{{interest.name}}' data-interest-id='{{interest.id}}' href='#'>View More Like This</a>
