@@ -24,6 +24,7 @@ prodAdv = aws.createProdAdvClient(
 /*process.on('uncaughtException', function (err) {
     console.error(err);
     console.log("Node NOT Exiting...");
+    //res.end(JSON.stringify(err));
 });*/
 
 
@@ -59,11 +60,11 @@ app.get('/', function(req, res){
 });
 app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     req.facebook.api('/me/friends', function(err, data) {
-        config.partials.main = 'product_board';
+        config.partials.main = 'friend_board';
         return res.render(
             'index',
             {
-                friends: data,
+                friends: data.data,
                 friends_json: JSON.stringify(data),
                 partials: config.partials
             }
@@ -76,75 +77,39 @@ app.get('/start', Facebook.loginRequired({ scope: 'friends_likes, friends_intere
 
 app.get('/suggest', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
     if(!req.query.fbuid){
-        res.end({ 'error':'missing query parameter of "' + req.query.fbuid + '"'});
+        res.end({ 'error':'missing query parameter of "fbuid"'});
     }
-    req.facebook.api('/' + req.query.fbuid + '/likes', function(err, data){
-        var interests = data.data;
-        var options = {
-            arrDeferred:[],
-            results:[],
-            done:function(data){
-                res.end(JSON.stringify(data));
+    _aws.suggestByFriend(req, req.query.fbuid, function(data){
+        res.end(JSON.stringify(data));
+    });
+});
+app.get('/friend/:fbuid', Facebook.loginRequired({ scope: 'friends_likes, friends_interests' /*, email' */ }), function (req, res) {
+    console.log(req.params);
+    if(!req.params.fbuid){
+        res.end({ 'error':'missing query parameter of "fbuid"'});
+    }
+    var fbuid = req.params.fbuid;
+    _aws.suggestByFriend(req, fbuid, function(data){
+        config.partials.main = 'product_board';
+        return res.render(
+            'index',
+            {
+                friend:{
+                    id:fbuid
+                },
+                products: data,
+                product_json: JSON.stringify(data),
+                partials: config.partials
             }
-        };
-        var cats = {};
-        for(var i in interests){
-            var strAppend = interests[i].name.split(' ')[0];
-            if(!cats[interests[i].id]){
-                cats[interests[i].id] = {
-                    'id':interests[i].id,
-                    'name':interests[i].name,
-                    'count':0
-                }
+        );
+    },function(){
+        config.partials.main = 'error';
+        return res.render(
+            'index',
+            {
+                partials: config.partials
             }
-            cats[interests[i].id].count += 1;
-            if(interests[i].category){
-                cats[interests[i].category] = {
-                    'id':interests[i].category,
-                    'name':interests[i].category,// + ' ' + strAppend,
-                    'count':0,
-                    'parent':{
-                        'name':interests[i].name,
-                        'id':interests[i].id
-                    }
-                };
-                cats[interests[i].category].count += 1;
-            }
-            if(interests[i].category_list){
-                for(var ii in interests[i].category_list){
-                    var cat = interests[i].category_list[ii];
-                    if(!cats[cat.id]){
-                        cats[cat.id] = {
-                            'id':cat.id,
-                            'name':cat.name,// + ' ' + strAppend,
-                            'count':0,
-                            'parent':{
-                                'name':interests[i].name ,
-                                'id':interests[i].id
-                            }
-                        }
-                    }
-                    cats[cat.id].count += 1;
-                }
-            }
-        }
-        var cats_array = [];
-        for(var i in cats){
-            cats_array.push(cats[i]);
-        }
-        cats_array.sort(function(a,b){
-            var a = a.count;
-            var b = b.count;
-            return a>b?-1:a<b?1:0;
-        });
-
-
-        var search_cats = cats_array.slice(0, 20);
-        console.log(search_cats);
-        for(var i in search_cats){
-            _aws.pop_interest_results(search_cats[i], options);
-
-        }
+        );
     });
 });
 

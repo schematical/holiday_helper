@@ -1,0 +1,24 @@
+<div class="product {{size}}">
+    <div class="media">
+        <a href="{{DetailPageURL}}" title="product title" target='_blank'>
+            <img src="{{LargeImage.URL}}" alt="product title" data-img="product-2" class="img-responsive">
+        </a>
+    </div>
+    <div class="details">
+        <p class="name" style='overflow:hidden; width:inherit;'>
+            <a href="{{DetailPageURL}}" target='_blank'>{{product_short_title}}</a>
+        </p>
+        <p class="price">
+            <span class="total">{{ItemAttributes.ListPrice.FormattedPrice}}</span>
+        </p>
+        <p class="price">
+            <span>
+                Based in their interest in
+                <a href='https://www.facebook.com/{{interest.id}}' target='_blank'>{{interest.name}}</a> -
+                <a href='https://www.facebook.com/{{interest.parent.id}}' target='_blank'>{{interest.parent.name}}</a>
+
+            </span>
+        </p>
+    </div>
+    <a class='btn-view-more-interest btn btn-bottom btn-atc qadd' data-interest-name='{{interest.name}}' data-interest-id='{{interest.id}}' href='#'>View More Like This</a>
+</div>

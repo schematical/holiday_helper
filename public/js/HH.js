@@ -122,6 +122,15 @@
 
             }
         },
+        SetProductData:function(data){
+            if(data){
+                HH.EmptyControls();
+                _hh.product_page = -1;
+                _hh.product_data = data;
+                HH.PopulateProducts();
+
+            }
+        },
         AppendFriends:function(intPage){
             if(intPage){
                 _hh.friend_page = intPage;
@@ -155,11 +164,7 @@
                 },
                 _hh.messages.product
             ).done(function(data){
-                HH.EmptyControls();
-                _hh.product_page = -1;
-                _hh.product_data = data;
-                HH.PopulateProducts();
-
+                HH.SetProductData(data);
             }).fail(_error);
         },
         PopulateProducts:function(intPage){
@@ -212,7 +217,7 @@
         },
         AddControlBase:function(name, fun){
             HH.Controls[name] = fun;
-            $.Mustache.load('/js/view/' + name + '.html').done(function(tpl){
+            $.Mustache.load('/js/view/' + name + '.hjs').done(function(tpl){
 
                 HH.Tpls[name] = Mustache.compile(tpl);
                 $(window).trigger(name + '-view-loaded');

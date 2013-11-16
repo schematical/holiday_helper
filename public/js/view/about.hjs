@@ -1,0 +1,37 @@
+<div id="product-board" class="clearfix">
+    <div class="col-xs-12 product">
+        <div class='row'>
+            <div class="col-sm-12">
+                <div class="content clearfix ">
+                    <div class="content inner" style='text-align: center;'>
+
+                        <h1>HolidayHelper.co</h1>
+                        <h3>We help you pick out holiday gifts for your friends and family</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+
+            <div class="col-sm-6">
+                <div class="content inner">
+                    <p class="lead">So you want to know what were about? We take pride in running HolidayHelper.co, helping people like you get the best gifts for you and your loved ones.
+
+                    <p class="lead">We search through their interests and the stuff they like such as music and TV shows to help you pick out the very best gifts</p>
+                </div> <!-- //end content -->
+            </div> <!-- //end span8 -->
+            <div class="col-sm-6">
+                <div class="content inner">
+                    <p>
+                        More stuff will go here but I hav eno ideas as of the moment. If your reading this I blame the elves for distracting me from writing this... Crazy elves...
+                    </p>
+                </div>
+            </div>
+        </div> <!-- //end row -->
+
+        <hr>
+
+
+    </div>
+</div> <!-- //end product-board -->

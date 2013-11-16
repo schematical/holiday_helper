@@ -1,0 +1,14 @@
+<div class="div-friend product medium cat-3">
+    <a href='/friend/{{id}}'>
+        <div class='row'>
+            <div class='col-sm-4'>
+                <img src='http://graph.facebook.com/{{id}}/picture' alt="product title" data-img="product-2" class="img-responsive" />
+            </div>
+            <div class='col-sm-8'>
+                <p class="name" style='overflow:hidden; width:inherit;'>
+                    {{name}}
+                </p>
+            </div>
+        </div>
+    </a>
+</div>

@@ -28,7 +28,9 @@ module.exports = function(){
 
         header_nav:'header_nav',
         footer_nav:'footer_nav',
-        loading:'loading'
+        loading:'loading',
+        product:'product',
+        friend:'friend'
 
     }
     return config;

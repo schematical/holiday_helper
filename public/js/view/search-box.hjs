@@ -1,0 +1,13 @@
+<!--<script id="search-box" type="text/html">-->
+    <div class="product large cta">
+        <div class="content">
+            <h3>See what else we have</h3>
+            <p></p>
+            <div class="input-group">
+                <input class="txt-search" name="search" type="text" placeholder="Video Games..." class="form-control">
+                <!--<input name="submit" type="submit" value="&rarr;" class="btn">-->
+            </div>
+            <a class='btn-search' href="#" class="btn btn-bottom">Search &rarr;</a>
+        </div>
+    </div>
+<!--</script>-->

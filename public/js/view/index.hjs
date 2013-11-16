@@ -6,10 +6,10 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/shopfrog.css" rel="stylesheet" media="screen">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/shopfrog.css" rel="stylesheet" media="screen">
 
-    <link href="css/shopfrog-green.css" rel="stylesheet" media="screen">
+    <link href="/css/shopfrog-green.css" rel="stylesheet" media="screen">
     <!--<link href="css/shopfrog-pink.css" rel="stylesheet" media="screen">
     <link href="css/shopfrog-blue.css" rel="stylesheet" media="screen">
     <link href="css/shopfrog-brown.css" rel="stylesheet" media="screen">
@@ -18,42 +18,41 @@
     <link href="css/shopfrog-grey.css" rel="stylesheet" media="screen">
     <link href="css/shopfrog-bw.css" rel="stylesheet" media="screen">-->
 
-    <link href="css/rateit.css" rel="stylesheet" media="screen">
-    <link href="css/magnific-popup.css" rel="stylesheet">
-    <script src="js/respond.min.js"></script>
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/css/rateit.css" rel="stylesheet" media="screen">
+    <link href="/css/magnific-popup.css" rel="stylesheet">
+    <script src="/js/respond.min.js"></script>
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 
     <link href="/lib/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
 
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/imagesloaded.min.js"></script>
-    <script src="js/jquery.masonry.min.js"></script>
-    <script src="js/jquery.rateit.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/shopfrog.js"></script>
+    <script src="/js/modernizr.min.js"></script>
+    <script src="/js/imagesloaded.min.js"></script>
+    <script src="/js/jquery.masonry.min.js"></script>
+    <script src="/js/jquery.rateit.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/shopfrog.js"></script>
     <!-- HH SCRIPTS -->
-    <script src="js/mustache.js"></script>
-    <script src="lib/mustache/jquery.mustache.js"></script>
-    <script src="lib/davis.js/davis.js"></script>
-    <script src="js/HH.js"></script>
-    <script src="js/control/HHControlBase.js"></script>
-    <script src="js/control/search-box.js"></script>
-    <script src="js/control/product.js"></script>
-    <script src="js/control/hello.js"></script>
-    <script src="js/control/friend.js"></script>
-    <script src="js/control/view_more.js"></script>
+    <script src="/js/mustache.js"></script>
+    <script src="/lib/mustache/jquery.mustache.js"></script>
+    <script src="/lib/davis.js/davis.js"></script>
+    <script src="/js/HH.js"></script>
+    <script src="/js/control/HHControlBase.js"></script>
+    <script src="/js/control/search-box.js"></script>
+    <script src="/js/control/product.js"></script>
+    <script src="/js/control/friend.js"></script>
+    <script src="/js/control/view_more.js"></script>
 
 </head>
 <body class="product-board">
 
 {{>header_nav }}
-
+<div id="product-board" class="clearfix">
 {{>main}}
-
+</div> <!-- //end product-board -->
 {{>footer_nav}}
 
 {{>loading}}
